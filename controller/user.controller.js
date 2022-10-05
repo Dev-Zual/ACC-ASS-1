@@ -14,3 +14,26 @@ module.exports.getRandomUser = (req, res) => {
 
   res.send(randomUser);
 };
+
+module.exports.saveAUser = (req, res) => {
+  // const newUser = req.body;
+  data.push(req.body);
+  res.send(data);
+};
+
+module.exports.updateUser = (req, res) => {
+  const { id } = req.params;
+  const findUser = data.map((user) => user.id == id);
+
+  findUser.id = req.body.id;
+  findUser.name = req.body.name;
+  findUser.gender = req.body.gender;
+  res.send(findUser);
+};
+
+module.exports.deleteUser = (req, res) => {
+  const { id } = req.params;
+
+  data = data.filter((user) => user.id !== Number(id));
+  res.send(data);
+};
