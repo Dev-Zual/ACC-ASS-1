@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "gender": "male",
+    "name": "Albert Einstein",
+    "contact": "12 stret jarman",
+    "photoUrl": "www.exaple.com"
+  },
+  {
+    "id": 2,
+    "gender": "male",
+    "name": "newton",
+    "contact": "12 stret jarman",
+    "photoUrl": "www.exaple.com"
+  },
+  {
+    "id": 3,
+    "gender": "male",
+    "name": "steffen howking",
+    "contact": "12 stret jarman",
+    "photoUrl": "www.exaple.com"
+  },
+  {
+    "id": 4,
+    "gender": "male",
+    "name": "Zual Rana",
+    "contact": "12 stret jarman",
+    "photoUrl": "www.exaple.com"
+  },
+  {
+    "id": 5,
+    "gender": "female",
+    "name": "sorna akter",
+    "contact": "12 stret jarman",
+    "photoUrl": "www.exaple.com"
+  }
+]
