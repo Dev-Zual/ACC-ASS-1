@@ -8,9 +8,14 @@ app.use(express.json());
 
 // all routes
 app.use("/api/v1/user", userRoutes);
+// app.use("/api/v1/user/random", userRoutes);
 
 app.get("/", (req, res) => {
   res.send("server running");
+});
+
+app.get("*", (req, res) => {
+  res.send("No route found");
 });
 
 app.listen(port, () => {

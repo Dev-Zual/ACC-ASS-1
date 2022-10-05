@@ -8,3 +8,9 @@ data = JSON.parse(
 module.exports.getAllUsers = (req, res) => {
   res.send(data);
 };
+module.exports.getRandomUser = (req, res) => {
+  const randomNumber = Math.floor(Math.random() * 5) + 1;
+  const randomUser = data.filter((user) => user.id === randomNumber);
+
+  res.send(randomUser);
+};
